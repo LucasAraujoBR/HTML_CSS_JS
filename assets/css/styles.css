@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: gold;
+}
+
+.navigation {
+    background-color: saddlebrown;
+}
+
+header ul li {
+    background-color: saddlebrown;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+    overflow: auto;
+    width: 100vw;
+    font-family: 'Public Sans', sans-serif;
+}
+
+header ul a {
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: saddlebrown;
+    transition: 1s ease-in-out;
+}
+
+header ul a:hover {
+    background-color: white;
+}
+
+section header {
+    background-color: var(--White);
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+}
+
+.logo {
+    padding: 20px;
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li a {
+    position: relative;
+    margin-left: 20px;
+    color: var(--GrayishBlue);
+}
+
+.navigation li a::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    transform: translateX(-50%);
+    bottom: -35px;
+    width: 0;
+    height: 4px;
+    background: var(--GrayishBlue);
+    transition: all .5s;
+}
+
+button {
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    background-color: red;
+}
+
+.navigation li a:hover::after {
+    width: 100%;
+}
+
+.detalhes {
+    background-color: var(--VeryLightGray);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    padding: 20px;
+}
