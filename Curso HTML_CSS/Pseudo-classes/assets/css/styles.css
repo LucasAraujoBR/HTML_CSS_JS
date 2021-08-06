@@ -1,0 +1,78 @@
+/* Da para fazer o estilo com base na situação que o elemento se encontra*/
+
+
+
+.heading {
+    color: darkturquoise;
+    border: 3px solid black;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.box {
+    padding: 10px;
+    border: 3px solid black;
+    background-color: darkviolet;
+}
+
+p {
+    color: deeppink;
+}
+
+
+/*passar o mouse sobre o elemento*/
+.heading:hover {
+    background-color: cornsilk;
+}
+
+/*Links*/
+
+a {
+    color: darkgreen;
+    transition: all 1s ease-in-out;
+}
+
+/*link nunca visitado*/
+a:link {
+    color: darkslateblue;
+}
+
+/*link visitados*/
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*elemento ativado no momento, segurando o mouse*/
+a:active {
+    background-color: blue;
+    text-decoration: none;
+}
+/*quando esse input é clicado ele muda um pouco*/
+input:focus {
+    box-shadow: 0 0 5px black;
+    outline: none;
+    border: 3px solid black;
+}
+/*input desativado(disable) ou ativado(enabled)*/
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes*/
+input:disabled {
+    background-color: blueviolet;
+    cursor: not-allowed;
+}
+
+.p2 {
+    color: black;
+}
+input:checked + p {
+   background-color: red;
+   
+}
+
+.pai .lista li:last-child {
+    background: red;
+}

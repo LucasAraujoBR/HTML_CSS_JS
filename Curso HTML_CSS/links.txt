@@ -1,0 +1,43 @@
+Pseudo classes
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+
+Pseudo Elementos: 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
+
+Especificidade CSS:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+https://www.w3.org/TR/selectors-3/#specificity
+https://specificity.keegan.st/
+
+Herança:
+https://www.sitepoint.com/css-inheritance-introduction/
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+https://www.w3schools.com/cssref/css_inherit.asp
+
+Box Model: 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model
+
+HTML Color:
+https://www.w3schools.com/colors/colors_picker.asp
+
+Unidades de medida:
+https://www.w3schools.com/cssref/css_units.asp
+
+Propriedades de texto:
+https://www.w3schools.com/css/css_text.asp
+
+Media Queries:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+Breakpoints:
+https://devfacts.com/media-queries-breakpoints-2021/
+
+Flexbox:
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex
+
+Grid:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid
+https://www.w3schools.com/css/css_grid.asp
+https://css-tricks.com/snippets/css/complete-guide-grid/
