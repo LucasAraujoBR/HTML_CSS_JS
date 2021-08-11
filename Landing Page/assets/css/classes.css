@@ -1,0 +1,21 @@
+.altbg {
+    background-image: url('../img/mainbg.svg');
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.whitebg {
+    background-color: var(--white-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.menu-spacing {
+    height: 65px;
+}
