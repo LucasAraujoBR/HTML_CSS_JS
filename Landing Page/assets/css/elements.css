@@ -7,6 +7,7 @@ html {
     font-size: 62.5%;
     background-image: url(../img/altbg.svg);
     background-position: center center;
+    scroll-behavior: smooth;
 }
 
 
@@ -27,7 +28,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
@@ -48,4 +52,18 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+button {
+    background-color: red; /* Green */
+    border: none;
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
