@@ -14,14 +14,20 @@
 </head>
 
 <body class="altbg">
+    <input type="checkbox" aria-label="Close menu" role="button" name="" id="close-menu" class="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1><a href="#"><img src="../img/logoPizza.svg" alt="img logo pizzaria"> O casarão</a></h1>
-            <a href="#"><button>Fazer pedido</button></a>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#intro"><img src="../img/logoPizza.svg"
+                        alt="img logo pizzaria"> O casarão</a></h1>
+
+            <a id="pedido" href="https://api.whatsapp.com/message/3P4OXOQYEIOJA1"><img src="../img/pedidoIcon.svg"
+                    alt="icone de pedidos">Pedido</a>
+
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Inicio</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#especialidades">Top 3</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#horario">Horário</a></li>
                     <li><a href="#local">Local</a></li>
@@ -40,11 +46,15 @@
                     perdendo. A pizza chega aí quentinha, feita com muito amor e ingredientes de altíssima qualidade.
                     Prove
                     aí que eu sei que vai querer de novo. </p>
-                    <br>
-                <p id="rede-social">     
-                <img src="../img/instaIcon.svg" alt="icone do instagram">
-                <img src="../img/facebookIcon.svg" alt="icone do facebook">
-                <img src="../img/whatsappIcon.svg" alt="icone do whatsapp"></p>
+                <br>
+                <p id="rede-social">
+                    <a href="https://instagram.com/casarao_pizzaria00?utm_medium=copy_link"><img
+                            src="../img/instaIcon.svg" alt="icone do instagram"></a>
+                    <a href="https://www.facebook.com/casarao.ilhadeitamaraca/?ti=as"><img src="../img/facebookIcon.svg"
+                            alt="icone do facebook"></a>
+                    <a href="https://api.whatsapp.com/message/3P4OXOQYEIOJA1"><img src="../img/whatsappIcon.svg"
+                            alt="icone do whatsapp"></a>
+                </p>
             </div>
             <div class="intro-img">
                 <img src="../img/pizzaIntro.svg" alt="Clientes comendo pizza">
@@ -53,61 +63,115 @@
     </section>
     <section id="especialidades" class="contato whitebg section">
         <div class="main-content especialidades-content">
-            <h2>Especialidades</h2>
+            <h2>Top 3</h2>
             <div class="grid">
-            <article>
-                <h3>Pizzas</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae numquam natus dolorem ipsa, enim quisquam, repellat at doloribus quis molestias tempora porro commodi inventore eius. Voluptatem, suscipit minima. Repellendus, numquam?</p>
-            </article>
-            <article>
-                <h3>Hamburgueres</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium, dicta enim accusantium amet, autem distinctio qui consectetur numquam sit harum inventore. Perferendis, fuga ab veniam soluta odio deleniti architecto.</p>
-            </article>
-            <article>
-                <h3>Petiscos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere est perferendis voluptatem repudiandae omnis asperiores, qui corporis veritatis suscipit incidunt, eius earum libero unde iusto nihil veniam quis aperiam.</p>
-            </article>
+                <article>
+                    <h3>Pizzas</h3>
+                    <p>Há muitos anos aperfeiçoando-a para moradores e turistas, com massa mais fina e crocante,
+                        tornando-a melhor pizza da Ilha</p>
+                </article>
+                <article>
+                    <h3>Sanduíches</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium, dicta enim
+                        accusantium amet, autem distinctio qui consectetur numquam sit harum inventore. Perferendis,
+                        fuga ab veniam soluta odio deleniti architecto.</p>
+                </article>
+                <article>
+                    <h3>Petiscos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere est perferendis
+                        voluptatem repudiandae omnis asperiores, qui corporis veritatis suscipit incidunt, eius earum
+                        libero unde iusto nihil veniam quis aperiam.</p>
+                </article>
+            </div>
         </div>
-    </div>
     </section>
 
     <section id="galeria" class="galeria altbg section">
         <div class="main-content galeria-content">
             <h2>Galeria</h2>
             <div class="grid">
-            <div class="galeria-img">
-                <img src="../img/casarao1.jpg" alt="dentro da pizzaria o casarão">
+                <div class="galeria-img">
+                    <img src="../img/casarao1.jpg" alt="dentro da pizzaria o casarão">
+                </div>
+                <div class="galeria-img">
+                    <img src="../img/casarao2.jpg" alt="pizza de dois sabores">
+                </div>
+                <div class="galeria-img">
+                    <img src="../img/casarão3.jpg" alt="frente da pizzaria">
+                </div>
             </div>
-            <div class="galeria-img">
-                <img src="../img/casarao2.jpg" alt="pizza de dois sabores">
-            </div>
-            <div class="galeria-img">
-                <img src="../img/casarão3.jpg" alt="frente da pizzaria">
-            </div>
-        </div>
     </section>
-    <section id="horario" class="whitebg section">
+    <section id="horario" class="horario whitebg section">
         <div class="main-content horario-content">
             <h2>Horários</h2>
-            <ul>
-                <li>Terça:</li>
-                <li>Quarta:</li>
-                <li>Quinta:</li>
-                <li>Sexta:</li>
-                <li>Sábado:</li>
-                <li>Domingo:</li>
-            </ul>
+            <div class="responsive-talbe">
+                <table>
+                    <caption>Tabela de horários</caption>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>Fechado</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>16:00 até 23:30</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>16:00 até 23:30</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</td>
+                            <td>16:00 até 23:30</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                            <td>16:00 até 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>16:00 até 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>16:00 até 00:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
     <section id="local" class="altbg section">
-        <div class="local-img">
-            asadfas
+        <div class="local main-content">
+            <h2>Localização</h2>
+            <p>O casarão se encontra próximo à praça do pilar. Ilha de Itamaracá - PE. <br>
+                <br>
+                Clique abaixo para encontrar a rota:
+                <p>
+                    <p>
+                        <br>
+                    </p>
+                </p>
+                <a
+                    href="https://www.google.com/maps/place/O+Casar%C3%A3o/@-7.7466667,-34.82635,17z/data=!3m1!4b1!4m5!3m4!1s0x7ab42f8d5fb2a43:0x996cd898407ef029!8m2!3d-7.746581!4d-34.8241443?hl=pt-BR"><img
+                        src="../img/navigation.svg" alt="icone de uma carro"></a>
+            </p>
         </div>
     </section>
 
-
-
+    <div class="fundo">
+        <p> © O casarão. All rights reserved.</h4>
+            Coded by <a href="https://github.com/LucasAraujoBR"><b>Lucas Araújo</b></a>
+        </p>
+    </div>
+    <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
